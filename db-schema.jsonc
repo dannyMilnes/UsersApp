@@ -1,0 +1,54 @@
+// To use the json server
+// --------------------------------------------------
+// - Navigate to your project folder. This should contain this file and db.json
+// - Install JSON Server: npm install -g json-server
+// - Start JSON Server: json-server --watch db.json
+// - Now visit http://localhost:3000/users/1
+//
+// 
+// Any issues browse the official docs below
+// --------------------------------------------------
+// https://github.com/typicode/json-server
+
+{
+    "users": [{
+        "id": "number",
+        "nameTitle": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "gender": "string",
+        "phone": "string",
+        "cell": "string",
+        "dob": "string",
+        "image": "string",
+        "email": "string",
+        "createdAt": "date-time",
+        "location": {
+            "street": "string",
+            "city": "string",
+            "state": "string",
+            "postcode": "string",
+            "timezone": "string"
+        }
+    }],
+    "posts": [{
+        "id": "number",
+        "image": "string",
+        "message": "string",
+        "createdAt": "date-time",
+        "tags": [
+            {
+                "title": "string"
+            }
+        ],
+        "owner": {
+            "id": "number"
+        }
+    }],
+    "comments": [{
+        "postId": "number",
+        "id": "number",
+        "authorId": "number",
+        "body": "string"
+    }]
+}
