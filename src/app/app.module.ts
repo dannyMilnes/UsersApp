@@ -10,6 +10,7 @@ import { UserComponent } from "./user/user.component";
 import { HttpClientModule } from "@angular/common/http";
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     InfoComponent,
     UserComponent,
     EmployeeDetailComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    UserProfileComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
